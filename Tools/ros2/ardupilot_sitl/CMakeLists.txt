@@ -91,6 +91,12 @@ install(DIRECTORY
   DESTINATION share/${PROJECT_NAME}/config
 )
 
+# Add for multiple vehicle
+install(DIRECTORY
+  config
+  DESTINATION share/${PROJECT_NAME}
+)
+
 # Install autotest default params.
 install(DIRECTORY
   ${ARDUPILOT_ROOT}/Tools/autotest/default_params
